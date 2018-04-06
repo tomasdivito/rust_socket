@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <script>
+      let socket = new WebSocket("ws://127.0.0.1:8080");
+      socket.onopen = function (_event) {
+        console.log("connection to socket server was a success");
+        socket.send("sending from js...");
+        socket.onmessage = data => console.log("data received:", data);
+      }
+    </script>
+  </body>
+</html>

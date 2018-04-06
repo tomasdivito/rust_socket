@@ -1,0 +1,6 @@
+[package]
+name = "socket_sv"
+version = "0.1.0"
+authors = ["Tomas Di Vito <tomasdv2@gmail.com>"]
+
+[dependencies]
